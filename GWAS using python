@@ -1,0 +1,20 @@
+import numpy as np
+from statsmodels.stats.multitest import assoc_test
+
+# create a 2D array of the genetic data
+# each row represents an individual, and each column represents a genetic variation
+genetic_data = np.array([[0, 1, 0],
+                         [1, 1, 0],
+                         [0, 0, 1],
+                         ...
+                         [1, 1, 0]])
+
+# create a 1D array of the trait data
+# each element represents the trait value for the corresponding individual
+trait_data = np.array([0, 1, 0, ..., 1])
+
+# perform the GWAS
+associations = assoc_test(genetic_data, trait_data, method='fisher')
+
+# print the associations
+print(associations)
