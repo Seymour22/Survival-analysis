@@ -1,0 +1,13 @@
+from lifelines import SurvivalModel
+
+# create a SurvivalModel instance
+model = SurvivalModel()
+
+# fit the model to your data
+model.fit(data, duration_col='time_to_event', event_col='event')
+
+# generate predictions for new data
+predictions = model.predict(new_data)
+
+# plot the fitted model
+model.plot()
