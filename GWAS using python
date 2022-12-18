@@ -18,3 +18,4 @@ associations = assoc_test(genetic_data, trait_data, method='fisher')
 
 # print the associations
 print(associations)
+
