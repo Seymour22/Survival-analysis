@@ -1,4 +1,13 @@
-#Chatgpt version of performing GWAS in python
+#GWAS that investigates if genotype is associated with live weight of duroc pigs
+
+#Download data from https://figshare.com/articles/dataset/Genotype_and_phenotype_dataset_for_GWAS_analysis/4263317
+#The data contains genotype files in the .bed, .bim and .fam formats as well as the phenotype file with the following characteristics recorded.
+
+#In the command line type the following
+
+plink --bfile GWAS_genotypes --assoc --allow-no-sex --pheno gwas_duroc_phenotypes.txt --pheno-name LiveWeight --pheno-merge --out results
+
+
 
 import numpy as np
 from statsmodels.stats.multitest import assoc_test
