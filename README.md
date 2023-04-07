@@ -4,6 +4,3 @@
 
 
 [Project2](https://github.com/Seymour22/Computational-biology/blob/main/Project%202:%20Survival%20analysis%20for%20brest%20cancer.ipynb) illustrates a survival analysis. Here we investigate if the survival of patients with breast cancer is associated with the detection of axillary nodes.
-
-
-[Project3](https://github.com/Seymour22/Computational-biology/blob/main/Project%203:%20Preprocessing%20steps%20for%20GWAS%20using%20PLINK.ipynb) illustrates some of the preprocessing steps for a GWAS study.
